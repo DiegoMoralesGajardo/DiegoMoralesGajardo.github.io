@@ -3,9 +3,53 @@
   <head>
     <meta charset="utf-8">
     <title>Entrega Final</title>
+    <!--link del css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--link de la fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-  <img src="imagenes/fondo.jpg"
+    <!--definicion de la clase maestra boton1 audio 0-->
+    <button class="boton1">Música</button>
+      <audio loop id="playmusica">
+       <source src="audio/0.wav" type="audio/wav">
+        Este navegador no soporta archivos de audio.
+      </audio>
+        <!--clase secundaria boton2 audio 1-->
+    <button class="boton1 boton2">Ambiente</button>
+      <audio loop id="playambiente">
+       <source src="audio/1.wav" type="audio/wav">
+      </audio>
+        <!--clase secundaria boton3 track1-->
+    <button class="boton1 boton3">Texto 1</button>
+      <audio id="player1">
+       <source src="audio/track1.mp3" type="audio/mp3">
+      </audio>
+        <!--clase secundaria boton4 track2-->
+    <button class="boton1 boton4">Texto 2</button>
+      <audio id="player2">
+       <source src="audio/track2.mp3" type="audio/mp3">
+      </audio>
+        <!--clase secundaria boton5 track3-->
+    <button class="boton1 boton5">Texto 3</button>
+      <audio id="player3">
+       <source src="audio/track3.mp3" type="audio/mp3">
+      </audio>
+        <!--clase secundaria boton6 track4-->
+    <button class="boton1 boton6">Texto 4</button>
+      <audio id="player4">
+       <source src="audio/track4.mp3" type="audio/mp3">
+      </audio>
+        <!--clase secundaria boton7 track5-->
+    <button class="boton1 boton7">Texto 5</button>
+      <audio id="player5">
+       <source src="audio/track5.mp3" type="audio/mp3">
+      </audio>
+    <!--link del script-->
     <script src="js/script.js"></script>
+    <!--fondo-->
+    <img source src="imagenes/fondo.jpg">
   </body>
 </html>

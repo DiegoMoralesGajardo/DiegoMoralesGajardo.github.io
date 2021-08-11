@@ -1,10 +1,51 @@
-p{
-  color: #4d4e52;
-  background: #b7f2f8;
-}
-body{
-  background: #b7f2f8;
-font-family: 'Comic Neue', cursive;
-}
+/*clase maestra*/
+ .boton1 {
+   background-color: #A8DADC;
+   border: 1px solid #1D3557;
+   color: #1D3557;
+   padding: 10px;
+   text-align:center;
+   font-size: 14px;
+   font-family: 'Comic Neue', cursive;
+   cursor:pointer;
+   transition-duration: 0.2s;
+   position:sticky;
+   top: 10px;
+ }
 
-.tipo1{color:#ca6702;}
+/*clases secundarias*/
+ .boton2 {
+
+ }
+ .boton3 {
+
+ }
+ .boton4 {
+
+ }
+ .boton5 {
+
+ }
+ .boton6 {
+
+ }
+ .boton7 {
+
+ }
+
+/*clases especiales*/
+ .boton1:hover{
+   background-color:#457B9D;
+   color:#F1FAEE;
+ }
+
+ .activo {
+   background-color: blue;
+   color: white;
+   border: 1px solid blue;
+ }
+
+ /*fondo de la pagina*/
+ body{
+   background: #F1FAEE;
+ }
