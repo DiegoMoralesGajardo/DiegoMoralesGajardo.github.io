@@ -11,7 +11,7 @@
    transition-duration: 0.2s;
    float:left;
    position:sticky;
-   top: 0px;
+   top: 7px;
    z-index: 20;
  }
 
@@ -32,48 +32,56 @@
    cursor:pointer;
    position:sticky;
    float:left;
-   top: 0px;
+   top: 7px;
    z-index: 30;
  }
   /*clase de la imagen de fondo*/
 .imgfondo {
+  width: 1500px;
   position:relative;
   top:0px;
   z-index: 10;
 }
-
+  /*clase del video*/
+.cajavideo {
+  position:relative;
+  float: left;
+  margin: -617px 0px 0px 100px;
+  z-index: 50;
+}
   /*id secundarias*/
   #boton1 {
     padding: 15px 26px;
-    margin: -4435px 0px 0px 795px;
+    margin: -4434px 0px 0px 795px;
   }
 
   #boton2 {
     padding: 15px 18px;
-    margin: -4435px 0px 0px 890px;
+    margin: -4434px 0px 0px 890px;
   }
 
   #boton3 {
     padding: 15px 26px;
-    margin: -4435px 0px 0px 984px;
+    margin: -4434px 0px 0px 984px;
   }
   #boton4 {
     padding: 15px 25px;
-    margin: -4435px 0px 0px 1077px;
+    margin: -4434px 0px 0px 1077px;
   }
   #boton5 {
     padding: 15px 26px;
-    margin: -4435px 0px 0px 1170px;
+    margin: -4434px 0px 0px 1170px;
   }
   #boton6 {
     padding: 15px 26px;
-    margin: -4435px 0px 0px 1265px;
+    margin: -4434px 0px 0px 1265px;
   }
   #boton7 {
     padding: 15px 26px;
-    margin: -4435px 0px 0px 1357px;
+    margin: -4434px 0px 0px 1357px;
   }
  /*color de fondo de la pagina*/
  body{
    background: #F1FAEE;
+   z-index: 0
  }

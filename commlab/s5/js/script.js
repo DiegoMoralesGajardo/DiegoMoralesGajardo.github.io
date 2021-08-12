@@ -13,7 +13,7 @@ var fondo1 = document.getElementById('player1');
 var fondo2 = document.getElementById('player2');
 
 //botones sin bucle 3, 4, 5, 6 y 7 definiciones audio
-var audios = ["audio/track1.mp3", "audio/track2.mp3", "audio/track3.mp3", "audio/track4.mp3", "audio/track5.mp3"];
+var audios = ["audio/track1.ogg", "audio/track2.ogg", "audio/track3.ogg", "audio/track4.ogg", "audio/track5.ogg"];
 
 var audio1 = document.getElementById('player3');
 var audio2 = document.getElementById('player4');
