@@ -1,40 +1,159 @@
-//definiciones
+//definiciones player
 var player1 = document.getElementById("player1");
 var player2 = document.getElementById("player2");
 var player3 = document.getElementById("player3");
 var player4 = document.getElementById("player4");
 var player5 = document.getElementById("player5");
+var player6 = document.getElementById("player6");
+var player7 = document.getElementById("player7");
 //botones en bucle 1 y 2
+var fondo = ["audio/0.wav", "audio/1.wav"];
 
-//ni idea como hacerlos
+var fondo1 = document.getElementById('player1');
+var fondo2 = document.getElementById('player2');
 
-//botones sin bucle 3, 4, 5, 6 y 7
+//botones sin bucle 3, 4, 5, 6 y 7 definiciones audio
 var audios = ["audio/track1.mp3", "audio/track2.mp3", "audio/track3.mp3", "audio/track4.mp3", "audio/track5.mp3"];
 
-var audio1 = document.getElementsByClassName('boton3');
-var audio2 = document.getElementsByClassName('boton4');
-var audio3 = document.getElementsByClassName('boton5');
-var audio4 = document.getElementsByClassName('boton6');
-var audio5 = document.getElementsByClassName('boton7');
+var audio1 = document.getElementById('player3');
+var audio2 = document.getElementById('player4');
+var audio3 = document.getElementById('player5');
+var audio4 = document.getElementById('player6');
+var audio5 = document.getElementById('player7');
 
-audio1.addEventListener("click", playAudio1);
-audio2.addEventListener("click", playAudio2);
-audio3.addEventListener("click", playAudio3);
-audio4.addEventListener("click", playAudio4);
-audio5.addEventListener("click", playAudio5);
+//condicionales if else en bucle 1 y 2, falta optimizar el codigo
+boton1.addEventListener("click", function() {
+  if (player1.paused) {
+    player1.play();
+    boton1.className = "activo";
+  } else {
+    player1.pause();
+    boton1.className = "boton";
+  };
+});
 
-function playAudio1() {
-  player1.play();
-}
-function playAudio2() {
-  player2.play();
-}
-function playAudio3() {
-  player3.play();
-}
-function playAudio4() {
-  player4.play();
-}
-function playAudio5() {
-  player5.play();
-}
+boton2.addEventListener("click", function() {
+  if (player2.paused) {
+    player2.play();
+    boton2.className = "activo";
+  } else {
+    player2.pause();
+    boton2.className = "boton";
+  };
+});
+
+//condicionales if else sin bucle 2, 3, 4, 5, 6, 7, con bloqueo de sobreposicion, falta optimizar el codigo urgente
+boton3.addEventListener("click", function() {
+  if (player3.paused) {
+    player3.play();
+    boton3.className = "activo";
+    player4.currentTime = 0;
+    player4.pause();
+    boton4.className = "boton";
+    player5.currentTime = 0;
+    player5.pause();
+    boton5.className = "boton";
+    player6.currentTime = 0;
+    player6.pause();
+    boton6.className = "boton";
+    player7.currentTime = 0;
+    player7.pause();
+    boton7.className = "boton";
+  } else {
+    player3.currentTime = 0;
+    player3.pause();
+    boton3.className = "boton";
+  };
+});
+
+boton4.addEventListener("click", function() {
+  if (player4.paused) {
+    player4.play();
+    boton4.className = "activo";
+    player3.currentTime = 0;
+    player3.pause();
+    boton3.className = "boton";
+    player5.currentTime = 0;
+    player5.pause();
+    boton5.className = "boton";
+    player6.currentTime = 0;
+    player6.pause();
+    boton6.className = "boton";
+    player7.currentTime = 0;
+    player7.pause();
+    boton7.className = "boton";
+  } else {
+    player4.currentTime = 0;
+    player4.pause();
+    boton4.className = "boton";
+  };
+});
+
+boton5.addEventListener("click", function() {
+  if (player5.paused) {
+    player5.play();
+    boton5.className = "activo";
+    player3.currentTime = 0;
+    player3.pause();
+    boton3.className = "boton";
+    player4.currentTime = 0;
+    player4.pause();
+    boton4.className = "boton";
+    player6.currentTime = 0;
+    player6.pause();
+    boton6.className = "boton";
+    player7.currentTime = 0;
+    player7.pause();
+    boton7.className = "boton";
+  } else {
+    player5.currentTime = 0;
+    player5.pause();
+    boton5.className = "boton";
+  };
+});
+
+boton6.addEventListener("click", function() {
+  if (player6.paused) {
+    player6.play();
+    boton6.className = "activo";
+    player3.currentTime = 0;
+    player3.pause();
+    boton3.className = "boton";
+    player4.currentTime = 0;
+    player4.pause();
+    boton4.className = "boton";
+    player5.currentTime = 0;
+    player5.pause();
+    boton5.className = "boton";
+    player7.currentTime = 0;
+    player7.pause();
+    boton7.className = "boton";
+  } else {
+    player6.currentTime = 0;
+    player6.pause();
+    boton6.className = "boton";
+  };
+});
+
+boton7.addEventListener("click", function() {
+  if (player7.paused) {
+    player7.play();
+    boton7.className = "activo";
+    player3.currentTime = 0;
+    player3.pause();
+    boton3.className = "boton";
+    player4.currentTime = 0;
+    player4.pause();
+    boton4.className = "boton";
+    player5.currentTime = 0;
+    player5.pause();
+    boton5.className = "boton";
+    player6.currentTime = 0;
+    player6.pause();
+    boton6.className = "boton";
+  } else {
+    player7.currentTime = 0;
+    player7.pause();
+    boton7.className = "boton";
+  };
+});

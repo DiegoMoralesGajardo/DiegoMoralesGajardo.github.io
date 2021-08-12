@@ -1,9 +1,9 @@
-/*clase maestra*/
- .boton1 {
+/*clase boton*/
+ .boton {
    background-color: #A8DADC;
    border: 1px solid #1D3557;
    color: #1D3557;
-   padding: 10px;
+   padding: 15px 20px;
    text-align:center;
    font-size: 14px;
    font-family: 'Comic Neue', cursive;
@@ -13,39 +13,49 @@
    top: 10px;
  }
 
-/*clases secundarias*/
- .boton2 {
-
- }
- .boton3 {
-
- }
- .boton4 {
-
- }
- .boton5 {
-
- }
- .boton6 {
-
- }
- .boton7 {
-
- }
-
-/*clases especiales*/
- .boton1:hover{
+/*clase especial*/
+ .boton:hover{
    background-color:#457B9D;
    color:#F1FAEE;
  }
-
+/*clase activo*/
  .activo {
-   background-color: blue;
-   color: white;
-   border: 1px solid blue;
+   background-color: #457B9D;
+   border: 1px solid #457B9D;
+   color: #F1FAEE;
+   padding: 10px;
+   text-align:center;
+   font-size: 14px;
+   font-family: 'Comic Neue', cursive;
+   cursor:pointer;
+   transition-duration: 0.2s;
+   position:sticky;
+   top: 10px;
  }
+  /*id secundarias*/
+  #boton1 {
+    margin: 0px 0px 0px 740px;
+  }
 
- /*fondo de la pagina*/
+  #boton2 {
+  }
+
+  #boton3 {
+
+  }
+  #boton4 {
+
+  }
+  #boton5 {
+
+  }
+  #boton6 {
+
+  }
+  #boton7 {
+
+  }
+ /*color de fondo de la pagina*/
  body{
    background: #F1FAEE;
  }
