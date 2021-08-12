@@ -7,7 +7,7 @@ var player5 = document.getElementById("player5");
 var player6 = document.getElementById("player6");
 var player7 = document.getElementById("player7");
 //botones en bucle 1 y 2
-var fondo = ["audio/0.wav", "audio/1.wav"];
+var fondo = ["audio/0.ogg", "audio/1.ogg"];
 
 var fondo1 = document.getElementById('player1');
 var fondo2 = document.getElementById('player2');

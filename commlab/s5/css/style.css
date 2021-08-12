@@ -9,8 +9,10 @@
    font-family: 'Comic Neue', cursive;
    cursor:pointer;
    transition-duration: 0.2s;
+   float:left;
    position:sticky;
-   top: 10px;
+   top: 0px;
+   z-index: 20;
  }
 
 /*clase especial*/
@@ -23,37 +25,53 @@
    background-color: #457B9D;
    border: 1px solid #457B9D;
    color: #F1FAEE;
-   padding: 10px;
+   padding: 15px 20px;
    text-align:center;
    font-size: 14px;
    font-family: 'Comic Neue', cursive;
    cursor:pointer;
-   transition-duration: 0.2s;
    position:sticky;
-   top: 10px;
+   float:left;
+   top: 0px;
+   z-index: 30;
  }
+  /*clase de la imagen de fondo*/
+.imgfondo {
+  position:relative;
+  top:0px;
+  z-index: 10;
+}
+
   /*id secundarias*/
   #boton1 {
-    margin: 0px 0px 0px 740px;
+    padding: 15px 26px;
+    margin: -4435px 0px 0px 795px;
   }
 
   #boton2 {
+    padding: 15px 18px;
+    margin: -4435px 0px 0px 890px;
   }
 
   #boton3 {
-
+    padding: 15px 26px;
+    margin: -4435px 0px 0px 984px;
   }
   #boton4 {
-
+    padding: 15px 25px;
+    margin: -4435px 0px 0px 1077px;
   }
   #boton5 {
-
+    padding: 15px 26px;
+    margin: -4435px 0px 0px 1170px;
   }
   #boton6 {
-
+    padding: 15px 26px;
+    margin: -4435px 0px 0px 1265px;
   }
   #boton7 {
-
+    padding: 15px 26px;
+    margin: -4435px 0px 0px 1357px;
   }
  /*color de fondo de la pagina*/
  body{
